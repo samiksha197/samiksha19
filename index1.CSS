@@ -1,0 +1,266 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 80vh;
+}
+
+.hero-content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin: 10px 0;
+}
+
+.hero-content h1 span {
+    color: #ff7b00; /* Orange accent from the image */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.typing {
+    color: #8b0000; /* Dark red/maroon accent */
+    font-weight: bold;
+}
+
+/* Button & Icons */
+.btn-about {
+    background: #2b1d6e;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    font-size: 1.5rem;
+    color: white;
+    background: #333;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #ff7b00;
+}
+
+/* The Profile Circle */
+.hero-image {
+    position: relative;
+}
+
+.circle-bg {
+    width: 400px;
+    height: 400px;
+    background: #ffcc00; /* Yellow background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle-bg img {
+    width: 90%;
+    height: auto;
+}
+/* Position the particles behind everything */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Matches the white background  */
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1; /* Pushes it behind the text and image */
+}
+
+/* Ensure the hero section is transparent so particles show through */
+.hero {
+    position: relative;
+    background: transparent;
+}
+/* The Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px); /* Moves up by 20 pixels */
+    }
+    100% {
+        transform: translateY(0px); /* Returns to original position */
+    }
+}
+
+/* Apply it to the Profile Circle */
+.circle-bg {
+    width: 400px;
+    height: 400px;
+    background: #ffcc00; /* Yellow background from Jigar's profile [cite: 1] */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    /* Animation Properties */
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Adds a soft shadow that stays */
+}
+
+.circle-bg img {
+    width: 90%;
+    height: auto;
+    /* Optional: If the image is a cutout, it looks better floating as one piece */
+}
+.shadow-effect {
+    width: 150px;
+    height: 20px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    margin: 20px auto 0;
+    filter: blur(5px);
+    animation: shadowPulse 4s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(0.8);
+        opacity: 0.2; /* Shadow fades as image moves higher */
+    }
+}
+.circle-container {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden; /* This clips the corners of the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Matches the white background in the image */
+  z-index: -1; /* Keeps it behind your text and buttons */
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20%;
+  font-family: sans-serif;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.yellow-circle {
+    width: 500px; /* Adjust size based on your layout */
+    height: 500px;
+    background-color: #f1c40f; /* The vibrant yellow color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Keeps the character's base at the bottom of the circle */
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 120%; /* Scale the image to fit nicely within the circle */
+    height: auto;
+    object-fit: contain;
+    /* Optional: subtle animation to match the modern feel */
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10%;
+    /* Ensure this sits above the particles background */
+    position: relative;
+    z-index: 5; 
+}
