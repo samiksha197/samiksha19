@@ -1,0 +1,52 @@
+/* About Section Styles */
+#about {
+    padding: 80px 10%;
+    background: var(--container-bg);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.section-title span {
+    color: #ff7b00; /* Matching Jigar's orange accent [cite: 9] */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Makes it responsive for mobile */
+}
+
+.about-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px #ffcc00; /* Yellow offset shadow matching profile theme [cite: 14] */
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.info-item span {
+    font-weight: bold;
+    color: var(--accent-color);
+}

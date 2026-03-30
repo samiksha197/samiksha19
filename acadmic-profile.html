@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Profile</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: var(--primary-color); }
+        .subtitle { color: #666; font-style: italic; }
+
+        section { margin-bottom: 30px; }
+        
+        h2 {
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        .entry-title { font-weight: bold; display: block; }
+        .entry-meta { font-size: 0.9rem; color: #7f8c8d; }
+
+        .skills-tag {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 5px 2px;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Samiksha Devmare</h1>
+        <p class="subtitle">Computer Science Engineering | Class of 2026</p>
+        <p>📧 samikshadevmare@email.com | 📍 sangola | 🔗 linkedin.com/in/samiksha197</p>
+    </header>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <span class="entry-title">First Year in Computer Science</span>
+            <span class="entry-meta">Fabtech Technical Campus,Sangola | 2026 - Present</span>
+            <p> Relevant Coursework: Data Structures, Algorithms, Web Development.</p>
+        </div>
+    </section>
+
+        <section>
+        <h2>Academic Projects</h2>
+        <div class="entry">
+            <span class="entry-title">Personal Portfolio Website</span>
+            <span class="entry-meta">Jan 2026</span>
+            <p>Developed a responsive static site using HTML and CSS to showcase academic achievements.</p>
+        </div>
+           </section>
+
+    </div>
+
+</body>
+</html>
